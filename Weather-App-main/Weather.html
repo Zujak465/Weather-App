@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <html lang="eng">
+    <title>Weather - Warsaw</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="Data.js"></script>
+    <script src="functions.js"></script> 
+
+</head>
+<body>
+    <div id="main">
+        <div class="Info">
+       <h1 class='texts' id="country">Warsaw</h1>
+       <img src="sun-ico.png" id="weatherCodeIco" alt="Current weather">
+        </div>
+       <h3 class='texts' id="date">Date:</h3>
+       <div class="Info"><img class="icons" src="thermometer-ico.png" alt="Thermometer">
+       <h2 class='texts' id="temperature">Temperature:</h2>
+       </div>
+       <div class="Info"> <img class="icons" src="rainwater-ico.png" alt="Rainfalls">
+       <h2 class='texts' id="rainfalls">Rainfalls:</h2>
+        </div>
+        <div class="Info"><img class="icons" src="wind-ico.png"> 
+       <h2 class='texts' id="Wind">Wind:</h2>
+        </div>
+        <div class="Info"> <img src="sunrise-ico.png" class="icons" alt="Sunrise">
+       <h2 class='texts' id="Sunrise">Sunrise</h2>
+       </div>
+       <div class="Info"> <img src="sunset-ico.png" class="icons" alt="Sunset">
+       <h2 class='texts' id="Sunset">Sunset</h2>
+      </div>
+    </div>
+        <h4 class="texts" id="Hour" onmouseover=updateHover(); onmouseleave=nonUpdateHover()>Last updated:</h4>
+        <h4 id="update" >Last updated</h4>
+        <img src="refresh-ico.png" id="refreshIcon" onclick=refreshAnimation();fetchData() alt="Refresh">
+    
+</body>
+</html>
