@@ -35,7 +35,7 @@ body{
 #refreshIcon{
     display: flex;
     align-items: end;
-    width: 7%;
+    width: 6%;
     height: 6%;
     
 }
@@ -58,8 +58,10 @@ cursor:pointer;
     color:gray;
 }
 #update{
+    position: absolute;
+    left:810px;
     color:aliceblue;
     background-color: rgba(0, 0, 0, 0.40);
-    width: 25%;
+    width: 15%;
     display: none;
 }
